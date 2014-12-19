@@ -1,0 +1,7 @@
+h2 材料追加
+
+= form_for @material do |f|
+  .field
+    = f.text_field :name, autofocus: true
+  .field
+    = f.submit "確認", class: "ui submit blue button"
