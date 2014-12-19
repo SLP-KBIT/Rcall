@@ -10,4 +10,6 @@
 
 class Material < ActiveRecord::Base
   belongs_to :ingredient
+
+  validates :name, uniqueness: true
 end
