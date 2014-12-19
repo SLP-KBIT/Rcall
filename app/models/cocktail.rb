@@ -9,7 +9,7 @@
 #  technic    :string(255)
 #  tpo        :string(255)
 #  glass      :string(255)
-#  base_id    :integer
+#  base       :string(255)
 #  volume     :integer
 #  created_at :datetime
 #  updated_at :datetime
