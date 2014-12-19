@@ -7,4 +7,14 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    = yield
+    nav.navbar.navbar-default
+      .container-fluid
+        .navber-header
+          a.navbar-brand href="/" Brand
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              = link_to "材料", materials_path
+
+    .container-fluid
+      = yield

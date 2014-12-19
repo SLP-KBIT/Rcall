@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20141219184043) do
     t.string   "technique"
     t.string   "tpo"
     t.string   "glass"
-    t.integer  "base_id"
+    t.string   "base"
     t.integer  "volume"
     t.datetime "created_at"
     t.datetime "updated_at"
