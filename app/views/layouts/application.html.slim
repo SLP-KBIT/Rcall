@@ -11,10 +11,10 @@ html
       .container-fluid
         .navber-header
           a.navbar-brand href="/" Brand
-            .collapse.navbar-collapse
-              ul.nav.navbar-nav
-                li
-                  a href="#" Link
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              = link_to "材料", materials_path
 
     .container-fluid
       = yield
