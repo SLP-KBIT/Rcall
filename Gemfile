@@ -48,3 +48,6 @@ end
 
 gem 'slim'
 gem 'draper'
+
+gem 'autoprefixer-rails'
+gem 'bootstrap-sass'
