@@ -8,30 +8,30 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 cocktails = Cocktail.create([
-  {id: 1, name: 'エンジェル・チップ', name_en: "angel's tip", taste: '甘口', technique: 'ビルド', tpo: '食後', glass: 'プースカフェ・グラス', base: 'カカオ・リキュール', volume: 8},
-  {id: 2, name: 'カカオ・フィズ', name_en: 'cacao fizz', taste: '甘口', technique: 'シェーク', tpo: 'オール', glass: 'タンブラー', base: 'カカオ・リキュール', volume: 8},
-  {id: 3, name: 'カルーア・ミルク', name_en: 'kahlua & milk', taste: '甘口', technique: 'ビルド', tpo: '食後', glass: 'タンブラー', base: 'コーヒー・リキュール', volume: 7},
-  {id: 4, name: 'カンパリ・オレンジ', name_en: 'campari orange', taste: '中口', technique: 'ビルド', tpo: '食前', glass: 'タンブラー', base: 'カンパリ', volume: 8},
-  {id: 5, name: 'キスミー・クイック', name_en: 'kiss me quick', taste: '甘口', technique: 'シェーク', tpo: 'オール', glass: 'タンブラー', base: 'パスティス', volume: 20},
-  {id: 6, name: 'キューバ・リバー・シュプリーム', name_en: 'cuba libre superiem', taste: '甘口', technique: 'ビルド', tpo: 'オール', glass: 'タンブラー', base: 'ピーチ・リキュール', volume: 12}
+  {name: 'エンジェル・チップ', name_en: "angel's tip", taste: '甘口', technique: 'ビルド', tpo: '食後', glass: 'プースカフェ・グラス', base: 'カカオ・リキュール', volume: 8},
+  {name: 'カカオ・フィズ', name_en: 'cacao fizz', taste: '甘口', technique: 'シェーク', tpo: 'オール', glass: 'タンブラー', base: 'カカオ・リキュール', volume: 8},
+  {name: 'カルーア・ミルク', name_en: 'kahlua & milk', taste: '甘口', technique: 'ビルド', tpo: '食後', glass: 'タンブラー', base: 'コーヒー・リキュール', volume: 7},
+  {name: 'カンパリ・オレンジ', name_en: 'campari orange', taste: '中口', technique: 'ビルド', tpo: '食前', glass: 'タンブラー', base: 'カンパリ', volume: 8},
+  {name: 'キスミー・クイック', name_en: 'kiss me quick', taste: '甘口', technique: 'シェーク', tpo: 'オール', glass: 'タンブラー', base: 'パスティス', volume: 20},
+  {name: 'キューバ・リバー・シュプリーム', name_en: 'cuba libre superiem', taste: '甘口', technique: 'ビルド', tpo: 'オール', glass: 'タンブラー', base: 'ピーチ・リキュール', volume: 12}
 ])
 
-materials = Material.create([{id: 1, name: 'クレーム・ド・カカオ'},
-{id: 2 , name: 'フレッシュ・クリーム'},
-{id: 3 , name: 'カカオ・リキュール'},
-{id: 4 , name: 'レモン・ジュース'},
-{id: 5 , name: '砂糖'},
-{id: 6 , name: 'ソーダ'},
-{id: 7 , name: 'カルーア'},
-{id: 8 , name: 'ミルク'},
-{id: 9 , name: 'カンパリ'},
-{id: 10, name: 'オレンジ・ジュース'},
-{id: 11, name: 'ペルノ'},
-{id: 12, name: 'キュラソー'},
-{id: 13, name: 'アンゴスチェラ・ビター'},
-{id: 14, name: 'サザン・カンフォート'},
-{id: 15, name: 'フレッシュ・ライム'},
-{id: 16, name: 'コーラ'}])
+materials = Material.create([{name: 'クレーム・ド・カカオ'},
+{name: 'フレッシュ・クリーム'},
+{name: 'カカオ・リキュール'},
+{name: 'レモン・ジュース'},
+{name: '砂糖'},
+{name: 'ソーダ'},
+{name: 'カルーア'},
+{name: 'ミルク'},
+{name: 'カンパリ'},
+{name: 'オレンジ・ジュース'},
+{name: 'ペルノ'},
+{name: 'キュラソー'},
+{name: 'アンゴスチェラ・ビター'},
+{name: 'サザン・カンフォート'},
+{name: 'フレッシュ・ライム'},
+{name: 'コーラ'}])
 
 ingredients = Ingredient.create([{cocktail_id: 1, material_id: 1},
 {cocktail_id: 1, material_id: 2},
