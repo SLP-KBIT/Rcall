@@ -1,0 +1,6 @@
+h2 カクテル登録
+
+= form_for @cocktail do |f|
+  = render 'form', f: f
+
+  = f.submit "登録", "data-role" => "none", class: "btn btn-primary"
