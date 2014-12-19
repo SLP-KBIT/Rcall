@@ -5,8 +5,11 @@
 
 .cocktail-item
   $margin: 4px
-  margin: $margin 0 $margin 0
+  margin: $margin 0 $margin 10px
   .cocktail-name
     font-weight: bold
   .cocktail-info
     margin-left: 8px
+    .volume:before
+      content: "度数: "
+      font-size: 12px

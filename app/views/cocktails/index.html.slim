@@ -1,9 +1,30 @@
 h2 カクテル一覧
 
-ul
+
+.row
   - @cocktails.each do |cocktail|
-    .cocktail-item
-      .cocktail-name
-        | #{cocktail.name}
-      .cocktail-info
-        = cocktail.taste
+    .col-md-4
+      .cocktail-item
+        .cocktail-name
+          | #{cocktail.name}
+        .cocktail-info
+          .row
+            ul
+              .col-md-6
+                li
+                  span = cocktail.taste
+              .col-md-6
+                li
+                  span = cocktail.technique
+              .col-md-6
+                li
+                  span = cocktail.tpo
+              .col-md-6
+                li
+                  span = cocktail.glass
+              .col-md-6
+                li
+                  span = cocktail.base
+              .col-md-6
+                li
+                  span.volume = cocktail.volume
