@@ -1,0 +1,2 @@
+class CocktaiilsController < ApplicationController
+end

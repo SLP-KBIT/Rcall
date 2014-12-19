@@ -1,0 +1,2 @@
+module CocktaiilsHelper
+end
