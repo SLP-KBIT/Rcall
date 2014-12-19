@@ -1,5 +1,7 @@
 h2 材料一覧
 
-ul
+= link_to "作成", new_material_path, class: "btn btn-success"
+
+ul.material-list
   - @materials.each do |material|
     li = material.name
