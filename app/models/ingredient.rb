@@ -10,4 +10,6 @@
 #
 
 class Ingredient < ActiveRecord::Base
+  has_one :cocktail
+  belongs_to :material
 end

@@ -17,4 +17,7 @@
 #
 
 class Cocktail < ActiveRecord::Base
+  has_many :materials, through: :ingredient
+  belongs_to :base, class_name: Material
+  has_many :ingredients
 end
