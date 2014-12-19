@@ -1,1 +1,9 @@
 h2 カクテル一覧
+
+ul
+  - @cocktails.each do |cocktail|
+    .cocktail-item
+      .cocktail-name
+        | #{cocktail.name}
+      .cocktail-info
+        = cocktail.taste
