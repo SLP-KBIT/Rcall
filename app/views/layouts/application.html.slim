@@ -7,5 +7,14 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
+    nav.navbar.navbar-default
+      .container-fluid
+        .navber-header
+          a.navbar-brand href="/" Brand
+            .collapse.navbar-collapse
+              ul.nav.navbar-nav
+                li
+                  a href="#" Link
+
     .container-fluid
       = yield
