@@ -4,7 +4,7 @@ h2 カクテル一覧
 
 .row
   - @cocktails.each do |cocktail|
-    .col-md-4
+    .col-md-6
       .cocktail-item
         .cocktail-item-header
           span.name.h4 #{cocktail.name}
@@ -32,9 +32,9 @@ h2 カクテル一覧
               .col-md-6
                 li
                   span.volume = cocktail.volume
-              .col-md-12
-                br
-                p 材料
-                ul
-                  - cocktail.materials.each do |mat|
-                    li = mat.name
+        .cocktail-ingredients
+          .header 材料
+          ul
+            .raw
+              - cocktail.materials.each do |mat|
+                li.col-md-6 = mat.name
