@@ -17,5 +17,5 @@
 
 class Cocktail < ActiveRecord::Base
   has_many :materials, through: :ingredient
-  has_many :ingredients
+  has_one :ingredient
 end
